@@ -1,0 +1,40 @@
+(d) The flying instructionis divided into six phases: 
+	(1) Phase 1:Exercises up to the first solo flight comprise a total of at least 10 hours dual flight instruction on an SE aeroplane including: 
+		(i) pre-flight operations, mass and balance determination, aeroplane inspection and servicing; 
+		(ii) aerodrome and traffic pattern operations, collision avoidance and precautions; 
+		(iii) control of the aeroplane by external visual references; 
+		(iv) normal take-offs and landings; 
+		(v) the basic UPRT exercises as specified in point (b) of AMC2 to Appendix 3; AMC1 to Appendix 5;
+		(vi) simulated engine failure. 
+	(2) Phase 2: Exercises up to the first solo cross-country flight comprise a total of at least 10 hours of dual flight instruction and at least 10 hours solo flight including: 
+		(i) maximum performance (short field and obstacleclearance) takeoffs and short-field landings; 
+		(ii)flight by reference solely to instruments, including the completion of a 180 � turn; 
+		(iii) dual cross-country flying using external visual references, DR and radio navigation aids, diversion procedures;
+		(iv) aerodrome and traffic pattern operations at different aerodromes; 
+		(v) crosswind take-offs and landings; 
+		(vi) abnormal and emergency procedures and manoeuvres, including simulated aeroplane equipment malfunctions; 
+		(vii) operations to, from and transiting controlled aerodromes, compliance with ATS procedures, R/T procedures and phraseology; 
+		(viii) knowledge of meteorological briefing arrangements, evaluation of weather conditions for flight and use of AIS. 
+	(3) Phase 3:Exercises up to the VFR navigation progress test comprise a total of at least 5 hours of dual instruction and at least 40 hours as PIC. The dual instruction and testing up to the VFR navigation progress test should comprise: 
+		(i) repetition of exercises of phases 1 and 2; 
+		(ii) VFR navigation progress test conducted by an FI not connected with the applicant's training; 
+		(iii) dual night flightinstruction. 
+	(4) Phase 4: Exercises up to the instrument rating skill test comprise:
+		(i) at least 55 hours instrument flight, which maycontain up to 25 hours of instrument ground time in an FNPT I or up to 40 hours in an FNPT II or FFS which should be conducted by an FI or an authorised SFI; 
+		(ii) 20 hours instrument time flown as SPIC; 
+		(iii) pre-flight procedures for IFR flights, including the use of the flight manual and appropriate ATS documents in the preparation of an IFR flight plan; 
+		(iv) procedures and manoeuvres for IFR operation under normal, abnormal and emergency conditions covering at least:
+			(A) transition from visual to instrument flight on take-off; 
+			(B) SIDs and arrivals;
+			(C) en-route IFR procedures;
+			(D) holding procedures; 
+			(E) instrument approaches to specified minima; 
+			(F) missed approach procedures; 
+			(G) landings from instrument approaches, including circling;
+		(v) in-flight manoeuvres and specific flight characteristicsand the basic UPRT exercises as specified in Sections A, B, C and D of Table 2 in point (b) of AMC2 to Appendix 3; AMC1 to Appendix 5;
+		(vi) operation of an ME aeroplane in the exercises of (iv), including operation of the aeroplane solely by reference to instruments with one engine simulated inoperative, and engine shut-down and restart (the latter training should be conducted at a safe altitudeunless carried out in an FSTD);
+		(vii) after completion of instrument training that is equivalent to the basic instrument flight module set out in AMC2 to Appendix 6, take-offs and landings as PIC at night.
+	(5) Phase 5: Advanced UPRT in accordance with point FCL.745.A;
+	(6) Phase 6:
+		(i) instruction and testing in MCC comprising the relevant training requirements; 
+		(ii) if a type rating for single-pilot aeroplanes in multi-pilot operations, or multi-pilot aeroplanes is not required on completion of this phase, the applicant should be issued with a certificate of course completion for MCC training.

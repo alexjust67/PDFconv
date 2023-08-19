@@ -1,0 +1,19 @@
+(d) The flight instruction is dividedinto three phases: 
+	(1) phase 1:Flight exercises up to the first solo flight comprise a total of not less than 12 hours dual flight instruction on a helicopter, including:
+		(i) pre-flight operations, mass and balance determination, helicopter inspection and servicing; 
+		(ii) aerodrome and traffic pattern operations, collision avoidance and procedures; 
+		(iii) control of the helicopter by external visual reference; 
+		(iv) take-offs, landings, hovering, look-out turns and normal transitions from and to the hover; 
+		(v) emergency procedures, basic auto-rotations, simulated engine failure, ground resonance recovery if relevant totype. 
+	(2) phase2: Flight exercises until general handling and day VFR navigation progress and basic instrument flying process check conducted by FI not connected with the applicant's training. This phase comprises a total flight time of not less than 128 hours, including 73 hours of dual instruction flight time and including at least 5 hours VFR conversion training on an ME helicopter, 15 hours of solo flight and 40 hours flown as student PIC. The instruction and testing contain the following: 
+		(i) sideways and backwards flight, turns on the spot; 
+		(ii) incipient vortex ring recovery; 
+		(iii) touchdown or advanced auto-rotations, simulated engine-off landings, practice forced landings. Simulated equipment malfunctions and emergency procedures relatingto malfunctions of engines, controls, electrical and hydraulic circuits; 
+		(iv) steep turns; 
+		(v) transitions, quick stops, out of wind manoeuvres, sloping ground landings and take-offs; 
+		(vi) limited power and confined area operations, including low level operations to and from unprepared sites; 
+		(vii) 10 hours flight by sole reference to basic flight instruments, including completion of a 180 � turn and recovery from unusual attitudes to simulate inadvertent entry into cloud; 
+		(viii) cross-country flying by external visual reference, DR and radio navigation aids, diversion procedures; 
+		(ix) aerodrome and traffic pattern operations at different aerodromes; 
+		(x) operations to, from and transiting controlled aerodromes, compliance with ATS procedures, R/T procedures and phraseology; (xi) application of meteorological briefing arrangements, evaluation of weather conditions for flight and use of AIS; (xii) night flight, including take-offs and landings as PIC;(xiii) general handling, day VFR navigation and basic instrument flying progress checks in accordance with Appendix 4 to Part-FCL, conducted by an FI not connected with the applicant's training.
+	(3) phase 3: Instruction in MCC comprises the relevant training set out in FCL.735.H and AMC1 FCL.735.A, FCL.735.H and FCL.735.As. If a type rating for MP helicopter is not required on completion of this part, the applicant should be provided with a certificate of course completion for MCC training. 

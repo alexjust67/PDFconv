@@ -5,12 +5,11 @@ import PyPDF2
 import re
 
 # creating a pdf file object
-text_file = open("D:/Vstudio/Vscode/PDFconv/data.txt", "w")
-
 parts = []
+filename="teoriaclassetypeaereo"
 # creating a pdf file object
-pdfFileObj = open('D:/Vstudio/Vscode/PDFconv/praticaATP-IRaereo.pdf', 'rb')
-  
+pdfFileObj = open(f'D:/Vstudio/Vscode/PDFconv/{filename}.pdf', 'rb')
+text_file = open(f"D:/Vstudio/Vscode/PDFconv/{filename}.txt", "w")
 # creating a pdf reader object
 pdfReader = PyPDF2.PdfReader(pdfFileObj, strict=True)
   
@@ -34,15 +33,16 @@ def deletewhite(parts,index):
         deletewhite(parts,index)
 
 count = [0,[]]
-
+temp=0
 def deletewhitefor(parts):
     for i in range(len(parts)-1):
         if parts[i]=='':
             count[0]+=1
         if count[0]==1:
-            count[1].append(i)
+            temp=i
         if count[0]==4:
             count[0]=0
+            count[1].append(temp)
             deletewhite(parts,count[1][-1])
             deletewhitefor(parts)
             break
@@ -51,6 +51,8 @@ deletewhitefor(parts)
 
 #ask for user input
 for i in count[1]:
+    if parts[i-1]=="\n":
+        i-=1
     print("insert the text missing between these two phrases: \n",parts[i-1],"\n",parts[i+1])
     parts[i]=input("insert the text: ")
 
