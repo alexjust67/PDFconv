@@ -1,4 +1,4 @@
-#D:/Vstudio/Vscode/converter/
+#D:/Vstudio/Vscode/converter
 
 # importing required modules
 import PyPDF2
