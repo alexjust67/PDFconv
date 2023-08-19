@@ -73,11 +73,12 @@ text_file.write(text_body)
 
 def find_string_in_file(filename,rootdir, search_string):
     line_numbers = []
-    with open(f'{rootdir}{filename}.txt', 'r') as file:
-        for search in search_string:
+    for search in search_string:
+        with open(f'{rootdir}{filename}.txt', 'r') as file:
             for line_num, line in enumerate(file, start=1):
                 if search in line:
                     line_numbers.append(line_num)
+                    break
     return line_numbers
 
 #close the files
