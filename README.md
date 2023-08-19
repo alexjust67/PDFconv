@@ -15,7 +15,7 @@ pip install PyPDF2 enchant
     ```
   - Once ran, the program it will prompt you to input any missig text that isn't encoded as text
     
-    <img src=Images/example.png width="70%"/>
+    <img src=Images/example.png width="70%" alt="non-text example"/>
 
     and then it will also prompt you to check the file and delete the unwanted parts before passing it into the function to determine the hierarchy.
 
