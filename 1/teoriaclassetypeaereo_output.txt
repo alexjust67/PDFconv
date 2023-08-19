@@ -1,5 +1,5 @@
 (a) Detailed listing for aeroplane structure and equipment, normal operation of systems and malfunctions: 
-	(1)dimensions: minimum required runway width for 180 ï¿½ turn. 
+	(1)dimensions: minimum required runway width for 180 ° turn. 
 	(2) engine including auxiliary power unit: 
 		(i) type of engine or engines; 
 		(ii) in general, function of the following systems or components:
@@ -229,7 +229,7 @@
 	(2) procedures and limitations:
 		(i) operational procedures; 
 		(ii) crew coordination. 
-(g) Special requirements for 'glass cockpit' aeroplanes with EFIS Additional learning objectives:  
+(g) Special requirements for 'glass cockpit' aereoplanes with EFISAdditional learning objectives:  
 	(1) general rules of aeroplanes computer hardware and software design; 
 	(2) logic of all crew information and alerting systems and their limitations; 
 	(3) interaction of the different aeroplane computer systems, their limitations, the possibilities of computer fault recognition and the actions to be performed on computer failures;

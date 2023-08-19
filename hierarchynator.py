@@ -1,40 +1,21 @@
 import re
+import subprocess
 
+def parse_file(phrases,hier,pattern,hierlayer=0):           #give a hierarchy value to each line and merge the lines that are divided by page boundaries
+        for line in phrases:
+            for p in range(len(pattern)):
+                found=False
+                if re.match(pattern[p],line):
+                    hier.append([p,line])
+                    found=True
+                    hierlayer=p
+                    break
+            if not found:
+                hier[-1][-1]+=(line)
+            
+        return hier
 
-filename="teoriaclassetypeaereo"
-
-file_path=f"D:/Vstudio/Vscode/PDFconv/{filename}.txt"
-
-file=open(file_path,'r')
-text_file = open(f"D:/Vstudio/Vscode/PDFconv/{filename}_output.txt", "w")
-hier=[]
-
-pattern = [r"^.{0,7}\((a|b|c|d|e|f|g|h|j|k|l|m|n|o|p|q|r|s+)\)",r"^.{0,7}\((1|2|3|4|5|6|7|8|9|10+)\)",r"^.{0,7}\((i|ii|iii|iv|v|vi|vii|viii|ix|x+)\)",r"^.{0,7}\((A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S+)\)"]
-
-phrases=[]
-
-for line in file:
-    if line=='\n':
-        continue
-    else:
-        phrases.append(line.replace("\n", ""))
-
-def parse_file(phrases,hier,hierlayer=0):
-    for line in phrases:
-        for p in range(len(pattern)):
-            found=False
-            if re.match(pattern[p],line):
-                hier.append([p,line])
-                found=True
-                hierlayer=p
-                break
-        if not found:
-            hier[-1][-1]+=(line)
-            #hier.append([hierlayer,line])
-        
-    return hier
-
-def transform_list(input_list):
+def transform_list(input_list):                             #transform the list into a list of strings with the correct spacing (for visual purposes)
     output_list=[]
     for i in range(len(input_list)):
         if input_list[i][0]==0:
@@ -47,13 +28,31 @@ def transform_list(input_list):
             output_list.append("\t\t\t"+input_list[i][1]+"\n")
     return output_list
 
-#TODO:must add check for hierarchy
+def hierarchy_creator(filename,rootdir,popopen=False):      #main function
+    
+    #open the file
+    text_file = open(f"{rootdir}{filename}_output.txt", "w")
+    file = open(f"{rootdir}{filename}.txt", "r")
+    hier=[]
 
-hier=parse_file(phrases,hier)
+    #regex patterns for the different hierarchy levels in order (0 max, 3min)
+    pattern = [r"^.{0,7}\((a|b|c|d|e|f|g|h|j|k|l|m|n|o|p|q|r|s+)\)",r"^.{0,7}\((1|2|3|4|5|6|7|8|9|10+)\)",r"^.{0,7}\((i|ii|iii|iv|v|vi|vii|viii|ix|x+)\)",r"^.{0,7}\((A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S+)\)"]
 
-print(hier)
-text=""
-for i in transform_list(hier):
-    print(i,end="")
-    text+=i
-text_file.write(text)
+    phrases=[]
+
+    #read the file and put each line in a list deleting the newlines
+    for line in file:
+        if line=='\n':
+            continue
+        else:
+            phrases.append(line.replace("\n", ""))
+
+    hier=parse_file(phrases,hier,pattern)
+
+    text=""
+    for i in transform_list(hier):
+        print(i,end="")
+        text+=i
+    text_file.write(text)
+
+    if popopen: subprocess.Popen(['notepad.exe', f"{rootdir}{filename}_output.txt"])

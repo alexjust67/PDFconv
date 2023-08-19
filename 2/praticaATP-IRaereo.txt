@@ -1,4 +1,4 @@
-(d) The flying instructionis divided into six phases: 
+(d) The flying instructionis divided into sixphases: 
 (1) Phase 1:
 Exercises up to the first solo flight comprise a total of at least 10 hours dual flight 
 instruction on an SE aeroplane including: 
@@ -15,7 +15,7 @@ Exercises up to the first solo cross-country flight comprise a total of at least
 dual flight instruction and at least 10 hours solo flight including: 
 (i) maximum performance (short field and obstacleclearance) takeoffs and short-field 
 landings; 
-(ii)flight by reference solely to instruments, including the completion of a 180 ï¿½ turn; 
+(ii)flight by reference solely to instruments, including the completion of a 180 ° turn; 
 (iii) dual cross-country flying using external visual references, DR and radio navigation 
 aids, diversion procedures;
 (iv) aerodrome and traffic pattern operations at different aerodromes; 
