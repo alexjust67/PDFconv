@@ -21,6 +21,8 @@ def parse_file(phrases,hier):
             hier.append(line)
     return hier
 
+#TODO:must add check for hierarchy
+
 parse_file(phrases,hier)
 
 print(hier)
