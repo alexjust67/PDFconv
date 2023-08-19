@@ -17,6 +17,7 @@ def spellchk(text):
 
     punctuation=r"""!"#$%&'*+,./:;<=>?@[\]^_`{|}~"""
 
+    # Common exceptions to the spell checker
     exceptions=["aeroplane", "pre-flight", "minima", "manoeuvres", "authorised", "maths", "licence"]
     
     # Split the input text
@@ -25,13 +26,17 @@ def spellchk(text):
     # Check each word for spelling errors
     for word in words:
 
+        # Remove punctuation
         if any(char in punctuation for char in word):
             # Remove punctuation using regex
             word = re.sub(r'[{}]'.format(re.escape(punctuation)), '', word)
 
+        # Check if the word is an acronym or a number or in parenthesis
         if not re.findall(patterns[0], word) and not re.findall(patterns[1], word) and word!='°' and word!='':
+            # Check if the word is in the dictionary
             if not dictionary.check(word) and (word not in exceptions):
                 if len(dictionary.suggest(word))!=0:
+                    # Ask the user if the word is correct or not
                     inpt=input(f"the word \u001b[31m{word}\u001b[0m is not in the dictionary, y: accept \u001b[31m{dictionary.suggest(word)[0]}\u001b[0m n: reject, anything else: replace with : ")
                     if inpt=='y':
                         text=text.replace(word,dictionary.suggest(word)[0])
@@ -39,7 +44,7 @@ def spellchk(text):
                         pass
                     else:
                         text=text.replace(word,inpt)
-                else:
+                else:   #if the word is not in the dictionary and there are no suggestions
                     inpt=input(f"the word \u001b[31m{word}\u001b[0m is not in the dictionary, n: reject, anything else: replace with : ")
                     if inpt=='n':
                         pass
