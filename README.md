@@ -14,5 +14,9 @@ pip install PyPDF2 enchant
     spellcheck = #enables the spellchecker
     ```
   - Once ran, the program it will prompt you to input any missig text that isn't encoded as text
-  
+    
+    <img src=Images/example.png width="70%"/>
+
     and then it will also prompt you to check the file and delete the unwanted parts before passing it into the function to determine the hierarchy.
+
+  - To edit the hierarchy the regex code in the 
