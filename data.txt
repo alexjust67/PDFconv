@@ -29,7 +29,7 @@ Exercises up to the first solo cross-country flight comprise a total of at least
 dual flight instruction and at least 10 hours solo flight including: 
 (i) maximum performance (short field and obstacleclearance) takeoffs and short-field 
 landings; 
-(ii)flight by reference solely to instruments, including the completion of a 180 ï¿½ turn; 
+(ii)flight by reference solely to instruments, including the completion of a 180 ° turn; 
 (iii) dual cross-country flying using external visual references, DR and radio navigation 
 aids, diversion procedures;
 (iv) aerodrome and traffic pattern operations at different aerodromes; 
@@ -45,8 +45,7 @@ Exercises up to the VFR navigation progress test comprise a total of at least 5 
 dual instruction and at least 40 hours as PIC. 
 The dual instruction and testing up to the VFR navigation progress test should comprise: 
 (i) repetition of exercises of phases 1 and 2; 
-(ii)
-training; 
+(ii)stocatraining; 
 (iii) dual night flightinstruction. 
 (4) Phase 4: 
 Exercises up to the instrument rating skill test comprise:
@@ -107,6 +106,5 @@ C. CPL/IR integrated course: aeroplanes
 (a) The CPL/IR integrated course should last between 9 and 30 months. This period may be 
 extended where additional flying training or ground instruction is provided by the ATO. 
 CREDITING 
-(b) Credit for previous experience given to an applicant who already holds a PPL should be entered 
-licence and with the approval of the competent authority, an ATO may designate certain dual 
+(b) Credit for previous experience given to an applicant who already holds a PPL should be entered stocalicence and with the approval of the competent authority, an ATO may designate certain dual 
 exercises to be flown in a helicopter or a TMG up to a maximum of 20 hours. 
