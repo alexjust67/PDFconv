@@ -5,14 +5,59 @@ import PyPDF2
 import re
 import hierarchynator as hier
 import subprocess
+import enchant
+import string
+
+def spellchk(text):
+    # Create a dictionary object for spell checking
+    
+    dictionary = enchant.Dict("en_UK")
+    
+    patterns = [r'[A-Z0-9]{2,}',r'\(|\)']
+
+    punctuation=r"""!"#$%&'*+,./:;<=>?@[\]^_`{|}~"""
+
+    exceptions=["aeroplane", "pre-flight", "minima", "manoeuvres", "authorised", "maths", "licence"]
+    
+    # Split the input text
+    words = text.split()
+
+    # Check each word for spelling errors
+    for word in words:
+
+        if any(char in punctuation for char in word):
+            # Remove punctuation using regex
+            word = re.sub(r'[{}]'.format(re.escape(punctuation)), '', word)
+
+        if not re.findall(patterns[0], word) and not re.findall(patterns[1], word) and word!='°' and word!='':
+            if not dictionary.check(word) and (word not in exceptions):
+                if len(dictionary.suggest(word))!=0:
+                    inpt=input(f"the word \u001b[31m{word}\u001b[0m is not in the dictionary, y: accept \u001b[31m{dictionary.suggest(word)[0]}\u001b[0m n: reject, anything else: replace with : ")
+                    if inpt=='y':
+                        text=text.replace(word,dictionary.suggest(word)[0])
+                    elif inpt=='n' or inpt=='':
+                        pass
+                    else:
+                        text=text.replace(word,inpt)
+                else:
+                    inpt=input(f"the word \u001b[31m{word}\u001b[0m is not in the dictionary, n: reject, anything else: replace with : ")
+                    if inpt=='n':
+                        pass
+                    else:
+                        text=text.replace(word,inpt)
+
+
+    return text
 
 parts = []
 
+spellcheck = True
+
 #root directory
-rootdir = 'D:/Vstudio/Vscode/PDFconv/3/'
+rootdir = 'D:/Vstudio/Vscode/PDFconv/2/'
 
 #filename
-filename="praticaATPelicottero"
+filename="praticaATP-IRaereo"
 
 # creating a pdf file object
 pdfFileObj = open(f'{rootdir}{filename}.pdf', 'rb')
@@ -68,9 +113,6 @@ for i in count[1]:
 
 text_body = "".join(parts)
 
-#writing the text to a file
-text_file.write(text_body)
-
 def find_string_in_file(filename,rootdir, search_string):
     line_numbers = []
     for search in search_string:
@@ -82,6 +124,11 @@ def find_string_in_file(filename,rootdir, search_string):
     return line_numbers
 
 #close the files
+
+errors=[]
+if spellcheck:
+    text_body=spellchk(text_body)
+text_file.write(text_body)
 text_file.close()
 pdfFileObj.close()
 
