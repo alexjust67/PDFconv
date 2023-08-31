@@ -1,5 +1,7 @@
 import re
 import subprocess
+import pickle
+import os
 
 def parse_file(phrases,hier,pattern,hierlayer=0):           #give a hierarchy value to each line and merge the lines that are divided by page boundaries
         for line in phrases:
@@ -28,7 +30,7 @@ def transform_list(input_list):                             #transform the list 
             output_list.append("\t\t\t"+input_list[i][1]+"\n")
     return output_list
 
-def hierarchy_creator(filename,rootdir,popopen=False):      #main function
+def hierarchy_creator(filename,rootdir,popopen=False,deleteunused=True):      #main function
     
     #open the file
     text_file = open(f"{rootdir}{filename}_output.txt", "w")
@@ -49,10 +51,17 @@ def hierarchy_creator(filename,rootdir,popopen=False):      #main function
 
     hier=parse_file(phrases,hier,pattern)
 
+    pickle.dump(hier,open(f"{rootdir}{filename}_hier.pkl","wb"))
+
     text=""
     for i in transform_list(hier):
         print(i,end="")
         text+=i
     text_file.write(text)
-
+    file.close()
+    text_file.close()
     if popopen: subprocess.Popen(['notepad.exe', f"{rootdir}{filename}_output.txt"])
+    
+    if deleteunused:
+        #delete the unused files
+        os.remove(f"{rootdir}{filename}.txt")

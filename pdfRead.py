@@ -7,6 +7,8 @@ import hierarchynator as hier
 import subprocess
 import enchant
 import string
+import shutil
+import os
 
 def spellchk(text):
     # Create a dictionary object for spell checking
@@ -59,10 +61,15 @@ parts = []
 spellcheck = True
 
 #root directory
-rootdir = 'D:/Vstudio/Vscode/PDFconv/2/'
+rootdir = 'D:/Vstudio/Vscode/PDFconv/'
 
 #filename
-filename="praticaATP-IRaereo"
+filename="pratica CPL-IR integrato aereo"
+
+#creating a directory with the filename, move the pdf and change the rootdir
+os.mkdir(f"{rootdir}{filename}")
+shutil.move(f"{rootdir}{filename}.pdf",f"{rootdir}{filename}/{filename}.pdf")
+rootdir=f"{rootdir}{filename}/"
 
 # creating a pdf file object
 pdfFileObj = open(f'{rootdir}{filename}.pdf', 'rb')
